@@ -28,3 +28,4 @@ namespace Module16
             return a / b;
         }
     }
+}
