@@ -32,5 +32,20 @@ namespace Module16.Tests
             Calculator calculator = new();
             Assert.True(calculator.Division(10, 2) == 5);
         }
+
+        //Добавлено дополнительно
+        [Test]
+        public void Division_MustThrowException()
+        {
+            Calculator calculator = new();
+            Assert.Throws<DivideByZeroException>( () => calculator.Division(10, 0));
+        }
+
+        [Test]
+        public void Miltiplication_MustThrowException()
+        {
+            Calculator calculator = new();
+            Assert.Throws<OverflowException>(() => calculator.Miltiplication(int.MaxValue, 2));
+        }
     }
 }

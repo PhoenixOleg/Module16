@@ -20,7 +20,7 @@ namespace Module16
 
         public int Miltiplication(int a, int b)
         {
-            return a * b;
+            return checked(a * b); //Добавил ключевое слово checked, чтобы форсировать проверку на переполнение. Был удивлен поведению по умолчанию o_O
         }
 
         public int Division(int a, int b)
