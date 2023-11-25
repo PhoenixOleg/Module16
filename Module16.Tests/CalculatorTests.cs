@@ -13,10 +13,18 @@ namespace Module16.Tests
         }
 
         [Test]
-        public void Subtraction__MustReturnCorrectValue()
+        public void Subtraction_MustReturnCorrectValue()
         {  
             Calculator calculator = new();
             Assert.True (calculator.Subtraction(2, 5) == -3);
         }
+
+        [Test]
+        public void Miltiplication_MustReturnCorrectValue()
+        {
+            Calculator calculator = new();
+            Assert.True(calculator.Miltiplication(2, 5) == 10);
+        }
+
     }
 }
