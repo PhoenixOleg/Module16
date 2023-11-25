@@ -1,6 +1,6 @@
 ﻿namespace Module16.Tests
 {
-    public class Class1
+    public class CalculatorTests
     {
 
     }
