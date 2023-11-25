@@ -26,5 +26,11 @@ namespace Module16.Tests
             Assert.True(calculator.Miltiplication(2, 5) == 10);
         }
 
+        [Test]
+        public void Division_MustReturnCorrectValue()
+        {
+            Calculator calculator = new();
+            Assert.True(calculator.Division(10, 2) == 5);
+        }
     }
 }
